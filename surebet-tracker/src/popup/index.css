@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  width: 400px;
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E293B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+input, select {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  color: #F8FAFC;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #6366F1;
+}
+
+input::placeholder {
+  color: #64748B;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #6366F1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #4F46E5;
+}
+
+.btn-secondary {
+  background-color: #334155;
+  color: #94A3B8;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #475569;
+  color: #F8FAFC;
+}
+
+.btn-danger {
+  background-color: transparent;
+  color: #EF4444;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid #EF4444;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background-color: #EF4444;
+  color: white;
+}
